@@ -6,8 +6,8 @@ class QuestionsController < ApplicationController
   def answer
     @answer = params[:answer]
 
-    # if params[:answer]
-    #   @members = @members.select { |member| member.start_with?(params[:member]) }
-    # end
+    if @answer == "I am going to work"
+      @coach_answer = "Great!"
+    end
   end
 end
